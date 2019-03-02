@@ -11,7 +11,8 @@
 + **Top Bar and Dock:** KDE (default widget)
 
 ## Latest Preview
-
+![Screenshot_20190302_202028](./previews/Screenshot_20190302_202028.png "Manjaro Mojave like")
+![Screenshot_20190302_202004](./previews/Screenshot_20190302_202004.png "Manjaro Mojave like")
 
 ## Tips / Notes
 **Attention!!!** 
