@@ -5,7 +5,7 @@
 + **KDE Shell:** Kvantum
 + **Kvantum Theme:** [Mojave Dark](https://store.kde.org/p/1252328/)
 + **Plasma Theme:** [Breeze Transparent Dark](https://store.kde.org/p/1170816/)
-+ **GTK2/3 Theme:** Breath
++ **GTK2/3 Theme:** [Mojave GTK Theme](https://github.com/vinceliuice/Mojave-gtk-theme)
 + **KDE Window Decorations:** [Mojave Dark Aurorae](https://www.opendesktop.org/p/1252329/)
 + **Icon Theme:** [Mojave CT](https://store.kde.org/p/1210856/)
 + **Top Bar and Dock:** KDE (default widget)
