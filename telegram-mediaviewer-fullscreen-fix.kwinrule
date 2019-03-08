@@ -1,0 +1,12 @@
+[Параметры для telegramdesktop]
+Description=\xd0\x9f\xd0\xb0\xd1\x80\xd0\xb0\xd0\xbc\xd0\xb5\xd1\x82\xd1\x80\xd1\x8b \xd0\xb4\xd0\xbb\xd1\x8f telegramdesktop
+clientmachine=localhost
+clientmachinematch=0
+fullscreen=true
+fullscreenrule=2
+title=Media viewer
+titlematch=1
+types=1
+wmclass=telegramdesktop
+wmclasscomplete=false
+wmclassmatch=1
