@@ -1,41 +1,40 @@
 # My experience KDE on Manjaro
 ## Some Details
 + **OS:** [Manjaro](https://manjaro.org)
-+ **Wallpaper:** [Mojave Night](https://hdqwalls.com/wallpaper/3840x2160/macos-mojave-night-mode-stock)
++ **Wallpaper:** [MacBook](https://wallpapercave.com/wallpaper-macbook)
 + **KDE Shell:** Kvantum
-+ **Kvantum Theme:** [Mojave Dark](https://store.kde.org/p/1252328/)
-+ **Plasma Theme:** [Breeze Transparent Dark](https://store.kde.org/p/1170816/)
-+ **GTK2/3 Theme:** [Mojave GTK Theme](https://github.com/vinceliuice/Mojave-gtk-theme)
-+ **KDE Window Decorations:** [Mojave Dark Aurorae](https://www.opendesktop.org/p/1252329/)
-+ **Icon Theme:** [Mojave CT](https://store.kde.org/p/1210856/)
-+ **Top Bar and Dock:** KDE (default widget)
++ **Kvantum Theme:** [WhiteSur](https://store.kde.org/p/1398841/)
++ **Plasma Theme:** [WhiteSur Dark](https://www.pling.com/p/1400424)
++ **GTK2/3 Theme:** [WhiteSur](https://github.com/vinceliuice/WhiteSur-gtk-theme)
++ **Firefox Theme:** WhiteSur
++ **KDE Window Decorations:** [WhiteSur Aurorae Theme](https://store.kde.org/p/1398835/)
++ **Icon Theme:** [WhiteSur](https://github.com/vinceliuice/WhiteSur-icon-theme)
++ **Top Bar and Dock:** LATTE
 
 ## Latest Preview
-![Screenshot_20190302_202028](./previews/Screenshot_20190302_202028.png "Manjaro Mojave like")
-![Screenshot_20190302_202004](./previews/Screenshot_20190302_202004.png "Manjaro Mojave like")
+![Screenshot_20190302_202028](./previews/Screenshot_20200928_155709.png "Manjaro Big Sur like")
+![Screenshot_20190302_202004](./previews/Screenshot_20200928_155645.png "Manjaro Big Sur like")
 
 ## Tips / Notes
-**Attention!!!** 
-I use small power hardware, my settings for `1 CPU 2Ghz, 2Gb RAM and 120 Gb SSD`
-+ Use [Zswap](https://wiki.archlinux.org/index.php/Zswap) and 4Gb swap partition
+I use hardware, `4 CPU 3Ghz, 16Gb RAM and 512 Gb SSD`
++ Use 16Gb swap partition
 + My config `/etc/sysctl.d/99-sysctl.conf` [see kernel docs, for help](https://www.kernel.org/doc/Documentation/sysctl/vm.txt)
 ```
-vm.swappiness = 40
+vm.swappiness = 10
 vm.vfs_cache_pressure = 50
 vm.dirty_background_ratio = 10
 vm.dirty_ratio = 40
 vm.dirty_writeback_centisecs = 500
 kernel.sysrq=1
 ```
-+ 
++
 + My `/etc/fstab` [see arch wiki, for help](https://wiki.archlinux.org/index.php/fstab)
 ```
-# <file system>                           <mount point>  <type>  <options>                      <dump>  <pass>
-UUID=ca790a69-b8a1-4b96-bf38-cec24457eed0 /              btrfs   subvol=@,defaults,compress=lzo 0       0
-UUID=16e58e24-d152-4e73-aaf3-65ee0e5ddc4f /home          btrfs   defaults,compress=lzo          0       0
-UUID=f54e7558-4808-49bf-b758-9baee7ebb5e1 swap           swap    defaults                       0       0
+# <file system>             <mount point>  <type>  <options>  <dump>  <pass>
+UUID=C059-2B81                            /boot/efi      vfat    umask=0077 0 2
+UUID=eb67ddb3-4029-4363-a09a-dcdab0834cf1 /              ext4    defaults,noatime,discard 0 1
+UUID=bd60a1ca-1fbd-4ae7-ac41-226aaad05d6c swap           swap    defaults,noatime 0 2
 ```
-+ and **Periodic TRIM** by systemd enable timer **fstrim.timer** instead `discard` in fstab [see arch wiki, for help](https://wiki.archlinux.org/index.php/Solid_state_drive#Periodic_TRIM)
 + I rarely use debugging information. `~/.bash_profile` add:
 ```
 QT_LOGGING_RULES='*=false'
