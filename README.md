@@ -27,7 +27,6 @@ vm.dirty_ratio = 40
 vm.dirty_writeback_centisecs = 500
 kernel.sysrq = 1
 ```
-+
 + My `/etc/fstab` [see arch wiki, for help](https://wiki.archlinux.org/index.php/fstab)
 ```
 # <file system>             <mount point>  <type>  <options>  <dump>  <pass>
