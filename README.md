@@ -31,7 +31,7 @@ kernel.sysrq = 1
 ```
 # <file system>             <mount point>  <type>  <options>  <dump>  <pass>
 UUID=C059-2B81                            /boot/efi      vfat    umask=0077 0 2
-UUID=eb67ddb3-4029-4363-a09a-dcdab0834cf1 /              ext4    defaults,noatime,discard 0 1
+UUID=eb67ddb3-4029-4363-a09a-dcdab0834cf1 /              ext4    defaults,noatime 0 1
 UUID=bd60a1ca-1fbd-4ae7-ac41-226aaad05d6c swap           swap    defaults,noatime 0 2
 ```
 + I rarely use debugging information. `~/.bash_profile` add:
